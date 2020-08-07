@@ -1,0 +1,60 @@
+html{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url('Assets/background-curve.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+}
+
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: repeat(10,1fr);
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#top-banner{
+    width: 90%;
+    height: auto;
+    grid-column: 1/11;
+    grid-row: 1/3;
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav-bar{
+    grid-column: 2/8;
+    grid-row: 2;
+    color: white;
+}
+
+#nav-bar,a{
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin: 0.5em;
+}
+
+#sign-up {
+    color: white;
+    font-size: 0.95em;
+    margin-top: 3em;
+    grid-column: 8;
+    grid-row: 2;
+
+}
