@@ -2,10 +2,11 @@
 html{
 
     width: 100%;
+    height: 100%;
 }
 
 body{
-    background-color: lightgray;
+    background-color: #eae8e8;
     width: 100%;
     height: 100%;
 }
@@ -14,8 +15,8 @@ body{
 #grid-container{
     background-color: #faf4f2;
     background-image: url('Assets/background-curve.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: repeat;*/
+    /*background-size: cover;*/
     opacity: 100%;
     margin-left: 5em;
     margin-right: 5em;
@@ -23,7 +24,7 @@ body{
     position: absolute;
     display: grid;
     grid-template-columns: 2em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2em ;
-    grid-template-rows: 5em 5em 8em 10em 5em 5em 5em 1em 15em 11em 20em 15em 5em 5em;
+    grid-template-rows: 5em 5em 8em 7em 5em 5em 5em 1em 15em 11em 15em 15em 15em 15em 15em  15em  40em ;
     /*margin: 0;*/
 
 
@@ -99,7 +100,8 @@ body{
     grid-row: 5;
     color: white;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.7em;
+    margin-top: 5em;
 
 
 }
@@ -108,7 +110,7 @@ body{
     grid-column: 5;
     grid-row: 5;
     justify-content: center;
-    margin-top: 5em;
+    margin-top: 7em;
     margin-left: 5em;
     color: white;
     width: 8em;
@@ -157,14 +159,15 @@ img {
 #map{
     grid-column: 5;
     grid-row: 10;
-    margin-top: 2em;
+    margin-top: 5em;
     margin-left: 6em;
 }
 #explore-activities-title{
     grid-column: 4/6;
     grid-row: 10;
-    margin-top: 5em;
+    margin-top: 7em;
     margin-left: 4em;
+    margin-bottom: 10em;
     width: 12em;
     text-align: center;
     font-weight: bold;
@@ -172,26 +175,109 @@ img {
 
 }
 
+
 .white-card-destination{
+    justify-content: center;
     background-color: white;
     border: white 1em solid;
     border-radius: 1em;
-    margin: 5em 2em 2em 2em;
-    width: 12em;
-    height: 15em;
+    padding-right:5em;
+    /*margin-top: 10em;*/
+    margin-right: 1em;
+    margin-left: 0.5em;
+    width: 10em;
+    height: 17em;
 
 
 }
-
 
 
 #destination-container-1{
-    display: flex;
+
     justify-content:center;
+    display: flex;
     flex-direction: row;
     grid-column: 2/10;
-    grid-row: 11;
+    grid-row: 12;
+}
 
+#destination-container-2{
+
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    grid-column: 2/10;
+    grid-row: 13;
+    margin-top: 5em;
 
 }
 
+#destination-container-3{
+
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    grid-column: 2/10;
+    grid-row: 14;
+    margin-top: 10em;
+
+}
+
+
+.destination-card-img {
+    align-content: center;
+}
+
+.destination-card-title{
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.destination-card-text{
+    text-align: center;
+    font-size: 0.5em;
+}
+
+.destination-card-button{
+
+}
+
+#btn-view-all{
+    grid-column:5;
+    grid-row: 15;
+    margin-top: 20em;
+    margin-left: 7em;
+    height: 2.5em;
+    width: 10em;
+    background:none;
+    color:#e6654e ;
+    border: #e6654e 0.1em solid;
+    border-radius: 5em;
+}
+
+
+#stay-in-touch{
+    background-image: url("Assets/curve.png");
+    grid-column: 2/10;
+    grid-row: 16;
+    border-radius: 0.5em;
+    background-color: #f8e1db;
+    /*border: #e6654e 0.1em solid;*/
+    margin-top: 10em;
+    margin-left: 5em;
+    margin-right: 5em;
+    height: 20em;
+
+}
+
+footer{
+    background: #f8e1db;
+    border-radius: 10em;
+    border: #f8e1db 0.01em solid;
+    margin-top: 25em;
+    grid-column: 1/11;
+    grid-row: 17;
+    height: 30em;
+    margin-bottom: -15em;
+}
