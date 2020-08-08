@@ -23,7 +23,7 @@ body{
     position: absolute;
     display: grid;
     grid-template-columns: 2em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2em ;
-    grid-template-rows: 5em 5em 8em 10em 5em 5em 5em 1em 1fr 1fr ;
+    grid-template-rows: 5em 5em 8em 10em 5em 5em 5em 1em 15em 11em 20em 15em 5em 5em;
     /*margin: 0;*/
 
 
@@ -171,3 +171,27 @@ img {
     font-size: 2em;
 
 }
+
+.white-card-destination{
+    background-color: white;
+    border: white 1em solid;
+    border-radius: 1em;
+    margin: 5em 2em 2em 2em;
+    width: 12em;
+    height: 15em;
+
+
+}
+
+
+
+#destination-container-1{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    grid-column: 2/10;
+    grid-row: 11;
+
+
+}
+
