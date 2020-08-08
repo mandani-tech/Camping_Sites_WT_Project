@@ -1,4 +1,3 @@
-
 html{
 
     width: 100%;
@@ -6,7 +5,7 @@ html{
 }
 
 body{
-    background-color: #eae8e8;
+    background-color:#F3F3F3;
     width: 100%;
     height: 100%;
 }
@@ -24,7 +23,7 @@ body{
     position: absolute;
     display: grid;
     grid-template-columns: 2em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2em ;
-    grid-template-rows: 5em 5em 8em 7em 5em 5em 5em 1em 15em 11em 15em 15em 15em 15em 15em  15em  40em ;
+    grid-template-rows: 5em 5em 8em 7em 5em 5em 5em 1em 15em 11em 15em 15em 15em 15em 25em 35em 40em ;
     /*margin: 0;*/
 
 
@@ -37,9 +36,11 @@ body{
     height: auto;
     grid-column: 1/11;
     grid-row: 1/3;
-    margin-left: -1.9em;
     margin-right: 0.1em;
+    margin-left: -1.9em;
     margin-top: -2em;
+    align-content: center;
+
 
 
 }
@@ -132,10 +133,7 @@ body{
     grid-row: 9;
 
 }
-img {
-    align-content: center;
-    margin-left: 35%;
-}
+
 .white-card{
     justify-content: center;
     background-color: white;
@@ -146,7 +144,11 @@ img {
     width: 13em;
     height: 13em;
 }
+.white-card-img{
 
+    align-content: center;
+    margin-left: 4em;
+}
 .white-card-tittle{
     font-size: 0.8em;
     font-weight: bold;
@@ -176,9 +178,9 @@ img {
     font-size: 2em;
 
 }
+/*destination cards */
 
-
-.white-card-destination{
+.card-destination-container{
     justify-content: center;
     background-color: white;
     border: white 1em solid;
@@ -193,10 +195,10 @@ img {
 
 }
 
-
 #destination-container-1{
 
     justify-content:center;
+    position: relative;
     display: flex;
     flex-direction: row;
     grid-column: 2/10;
@@ -227,22 +229,49 @@ img {
 
 
 .destination-card-img {
-    align-content: center;
+    position: center ;
+    margin-left: 1.1em;
+}
+
+.destination-card-heart{
+    /*float: right;*/
+    margin-left: 9em;
+    z-index: 9;
+
+
 }
 
 .destination-card-title{
     text-align: center;
     font-size: 0.7em;
     font-weight: bold;
+    margin-left: 3em;
+    width: 15em;
 }
 
 .destination-card-text{
     text-align: center;
     font-size: 0.5em;
+    margin-left: 6em;
+    width: 15em;
 }
 
+.destination-rate-card{
+color:#e6654e ;
+    font-size: 0.85em;
+    border-radius: 3em;
+    border: #e6654e 0.1em solid;
+    width: 5em;
+    margin-left: 6em;
+}
 .destination-card-button{
 
+    margin-left: 2em;
+    width: 10em;
+    height: 3em;
+    border: #F3F3F3 0.1em solid;
+    border-radius: 5.5em;
+    background-color: #F3F3F3;
 }
 
 #btn-view-all{
@@ -266,11 +295,66 @@ img {
     border-radius: 0.5em;
     background-color: #f8e1db;
     /*border: #e6654e 0.1em solid;*/
-    margin-top: 10em;
+    margin-top: 1em;
     margin-left: 5em;
     margin-right: 5em;
     height: 20em;
+    display: grid;
+    grid-template-columns: 0.1em 1fr 1fr 1em;
+    grid-template-rows: 10em 40em 20em;
 
+}
+
+#stay-in-touch-tent-img{
+    grid-column: 3;
+    grid-row: 1/3;
+
+}
+
+#stay-in-touch-title{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    height: 3em;
+    width: 30em;
+    margin-top: 5em;
+    margin-left: 2.5em;
+}
+
+#stay-in-touch-text{
+    grid-column: 2;
+    grid-row: 1;
+    height: 3em;
+    width: 30em;
+    margin-top: 10em;
+    text-align: left;
+    font-size: 1em;
+}
+
+#stay-in-touch-input{
+    grid-column:2;
+    grid-row: 2/4;
+    height: 2em;
+    width: 40em;
+    margin-left:7em;
+    border-radius: 1em;
+    margin-top: 3em;
+    padding: 0.7em;
+    border: #F3F3F3 solid 0.1em;
+}
+
+#stay-in-touch-submit-img{
+    grid-column:2/4;
+    grid-row: 2/4;
+    margin-left: 37em;
+    margin-top: 1.2em;
+    margin-bottom: 25em;
+
+
+}
+#stay-in-touch-email-img{
+    grid-column: 3;
+    grid-row: 3;
 }
 
 footer{
