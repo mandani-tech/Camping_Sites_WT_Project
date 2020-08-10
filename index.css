@@ -14,7 +14,7 @@ body{
 #grid-container{
     background-color: #faf4f2;
     background-image: url('Assets/background-curve.png');
-    /*background-repeat: repeat;*/
+    background-repeat: repeat;
     /*background-size: cover;*/
     opacity: 100%;
     margin-left: 5em;
@@ -23,8 +23,9 @@ body{
     position: absolute;
     display: grid;
     grid-template-columns: 2em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2em ;
-    grid-template-rows: 5em 5em 8em 7em 5em 5em 5em 1em 15em 11em 15em 15em 15em 15em 25em 35em 45em 10em;
-    /*margin: 0;*/
+    grid-template-rows: 5em 5em 8em 7em 5em 5em 5em 1em 15em 11em 12em 17em 17em 17em 25em 35em 45em ;
+
+
 
 
 
@@ -48,6 +49,7 @@ body{
     grid-row: 2;
     color: white;
     font-size: 1em;
+
 
 }
 
@@ -92,6 +94,7 @@ body{
     text-align: center;
     font-weight: bold;
     font-size: 3em;
+    font-family: "cursive";
     margin-left: 4em;
 
 
@@ -151,13 +154,13 @@ body{
 
 }
 .white-card-tittle{
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
     text-align: center;
 }
 
 .white-card-text{
-    font-size: 0.7em;
+    font-size: 0.8em;
     text-align: center;
 }
 
@@ -172,7 +175,7 @@ body{
     grid-row: 10;
     margin-top: 7em;
     margin-left:8em;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
     width: 12em;
     text-align: center;
     font-weight: bold;
@@ -181,26 +184,6 @@ body{
 
 }
 /*destination cards */
-
-.card-destination-container{
-
-    /*position: relative;*/
-    background-color: white;
-    border: white 1em solid;
-    border-radius: 1em;
-    padding-right:5em;
-    /*margin-top: -10em;*/
-    margin-right: 1em;
-    margin-left: 0.5em;
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-    width: 10em;
-    height: 20em;
-
-
-
-
-}
 
 #destination-container-1{
 
@@ -221,7 +204,7 @@ body{
     flex-direction: row;
     grid-column: 2/10;
     grid-row: 13;
-    margin-top: 12em;
+    margin-top: 5em;
 
 }
 
@@ -232,34 +215,44 @@ body{
     flex-direction: row;
     grid-column: 2/10;
     grid-row: 14;
-    margin-top: 25em;
+    margin-top: 10em;
+
+}
+.card-destination-container{
+
+    background-color: white;
+    border: white 1em solid;
+    border-radius: 1em;
+    padding-right:5em;
+    padding-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 0.5em;
+    width: 10em;
+    height: 17em;
 
 }
 
-
 .destination-card-img {
-    /*position:relative;*/
-    /*bottom: 10em;*/
     margin-left: 1.1em;
 
 }
 
 .destination-card-heart{
    position: relative;
-    top: 3em;
+    top: -9em;
     margin-left: 10em;
 
 }
 
 .destination-card-title{
-    position: relative;
-    top: 1em;
     text-align: center;
     font-size: 0.9em;
     font-weight: bold;
     color: #3b3735;
     margin-left: 1em;
+    margin-top: -3em;
     width: 15em;
+
 }
 
 .destination-card-text{
@@ -267,25 +260,23 @@ body{
     font-size: 0.5em;
     color: #3b3735;;
     margin-left: 6em;
-    width: 15em;
+    width: 20em;
 }
 
 .destination-rate-card{
     position: relative;
-    top:15em;
+    top: -2.5em;
     text-align: center;
     color:#e6654e ;
     font-size: 0.7em;
     border-radius: 3em;
     background-color: white;
-    /*border: #e6654e 0.1em solid;*/
     padding: 0.5em;
     height: 2em;
     width: 8em;
     margin-left: 6em;
 }
 .destination-card-button{
-
     margin-left: 4em;
     width: 10em;
     height: 3em;
@@ -295,9 +286,10 @@ body{
 }
 
 #btn-view-all{
+    position: absolute;
     grid-column:5;
     grid-row: 15;
-    margin-top: 43em;
+    margin-top: 25em;
     margin-left: 12em;
     height: 2.5em;
     width: 10em;
@@ -315,7 +307,7 @@ body{
     border-radius: 0.5em;
     background-color: #f8e1db;
     /*border: #e6654e 0.1em solid;*/
-    margin-top: 20em;
+    margin-top: 7em;
     margin-left: 5em;
     margin-right: 5em;
     padding-bottom:2em ;
@@ -329,7 +321,7 @@ body{
 #stay-in-touch-tent-img{
     grid-column: 3;
     grid-row: 1/3;
-    margin-top: 3em;
+    margin-top: 2.7em;
 
 }
 
@@ -339,8 +331,8 @@ body{
     text-align: left;
     height: 3em;
     width: 30em;
-    margin-top: 5em;
-    margin-left: 2.5em;
+    margin-top: 3em;
+    margin-left: 2.8em;
     color: #3b3735;
 }
 
@@ -349,8 +341,8 @@ body{
     grid-row: 1;
     height: 3em;
     width: 30em;
-    margin-top: 12em;
-    margin-left: 8em;
+    margin-top: 10em;
+    margin-left: 7em;
     text-align: left;
     font-size: 0.9em;
     color: #3b3735;
@@ -364,7 +356,7 @@ body{
     width: 35em;
     margin-left: 7em;
     border-radius: 1em;
-    margin-top: 3em;
+    margin-top: 5em;
     padding: 0.7em;
     border: none ;
 }
@@ -373,7 +365,7 @@ body{
     grid-column:2/4;
     grid-row: 2/4;
     margin-left: 30em;
-    margin-top: 3em;
+    margin-top: 3.2em;
     margin-bottom: 25em;
 
 
@@ -420,9 +412,10 @@ footer{
  }
 
 #google-img{
+
     grid-column: 3;
     grid-row: 2;
-    margin-top: 12em;
+    margin-top: 10.5em;
 
 
 }
